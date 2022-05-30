@@ -15,3 +15,6 @@ input.onButtonPressed(Button.B, function () {
         strip.showColor(neopixel.colors(NeoPixelColors.Yellow))
     }
 })
+basic.forever(function () {
+    strip = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
+})
